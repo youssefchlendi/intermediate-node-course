@@ -10,16 +10,21 @@ app.listen(port, ()=>{
 	console.log(`server is listening on port:${port}`)
 })
 
-app.route('/users')
-.post((req,res)=>{
-	// code goes here
+// CREATE
+app.post('/users',(req,res)=>{
+  // User.create()
 })
+
+app.route('/users/:id')
+// READ
 .get((req,res)=>{
-	// code goes here
+  // User.findById()
 })
+// UPDATE
 .put((req,res)=>{
-	// code goes here
+  // User.findByIdAndUpdate()
 })
+// DELETE
 .delete((req,res)=>{
-	// code goes here
+  // User.findByIdAndDelete()
 })
